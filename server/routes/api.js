@@ -1,9 +1,6 @@
 var express = require('express'),
- router = express.Router();
- 
-//routes for user api
-router.use("/user", require("../controllers/user.api"));
- 
-//add here other api routes
- 
+    router = express.Router();
+
+router.use("/api", require("../controllers/user.api"));
+
 module.exports = router;
